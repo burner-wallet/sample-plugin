@@ -33,7 +33,7 @@ const core = new BurnerCore({
 
 const BurnerWallet = () =>
   <ModernUI
-    title="ETHWaterloo"
+    title="Local Wallet"
     core={core}
     plugins={[new MyPlugin()]}
   />

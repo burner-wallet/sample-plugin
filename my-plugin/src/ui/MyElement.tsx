@@ -1,10 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { BurnerContext } from '@burner-wallet/types';
+import MyPlugin from '../MyPlugin';
 
-const MyElement: React.FC<BurnerContext> = () => {
+const MyElement: React.FC<BurnerContext> = ({ plugin }) => {
+  const [block, setBlock] = useState<string | null>(null);
+  const _plugin = plugin as MyPlugin;
+
+  useEffect(() => {
+    _plugin.getBlockNum().then((num: string) => setBlock(num))
+  }, []);
+
   return (
     <div>
-      Injected plugin element
+      <div>Injected plugin element</div>
+      {block && (
+        <div>Current block number: {block}</div>
+      )}
     </div>
   );
 };
