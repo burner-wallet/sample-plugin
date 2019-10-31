@@ -11,3 +11,16 @@ This repo provides a boilerplate for building a new plugin for the Burner Wallet
   to start the wallet connected to Mainnet & xDai
 
 ## Renaming the plugin
+
+To rename the plugin from "MyPlugin" to your own plugin name, you must update the following locations:
+
+1. Rename the `my-plugin` directory
+2. Change `my-plugin` in `lerna.json` and the root `package.json`
+3. Change the name field in `package.json` in your plugin's `package.json` file
+4. Rename `MyPlugin.ts`
+5. Change `MyPlugin.js` and `MyPlugin.d.ts` in the plugin `package.json` file
+6. Change the class name in the main plugin file
+7. Change rename `my-plugin` dependency in `basic-wallet/package.json` & `local-wallet/package.json`
+8. In `basic-wallet/src/index.tsx` and `local-wallet/src/index.tsx`, update the import
+  `import MyPlugin from 'my-plugin';` as well as the `new MyPlugin()` constructor.
+9. Finally, run `yarn install` in the root to re-link the packages
