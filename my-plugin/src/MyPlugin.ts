@@ -1,4 +1,4 @@
-import { BurnerPluginContext, Plugin } from '@burner-wallet/types';
+import { BurnerPluginContext, Plugin, Actions } from '@burner-wallet/types';
 import MyPage from './ui/MyPage';
 import MyElement from './ui/MyElement';
 
@@ -7,7 +7,7 @@ interface PluginActionContext {
 }
 
 export default class MyPlugin implements Plugin {
-  private pluginContext: BurnerPluginContext;
+  private pluginContext?: BurnerPluginContext;
 
   initializePlugin(pluginContext: BurnerPluginContext) {
     this.pluginContext = pluginContext;

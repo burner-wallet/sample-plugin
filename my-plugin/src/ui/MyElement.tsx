@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { BurnerContext } from '@burner-wallet/types';
+import { PluginElementContext } from '@burner-wallet/types';
 import MyPlugin from '../MyPlugin';
 
-const MyElement: React.FC<BurnerContext> = ({ plugin }) => {
+const MyElement: React.FC<PluginElementContext> = ({ plugin }) => {
   const [block, setBlock] = useState<string | null>(null);
   const _plugin = plugin as MyPlugin;
 
