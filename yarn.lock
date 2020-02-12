@@ -1069,20 +1069,20 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@burner-wallet/assets@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@burner-wallet/assets/-/assets-1.0.0.tgz#fddd9ad7b4f3411c2a72bc838648b029f5aa7db2"
-  integrity sha512-kPmn7ORc12vMf0zenb17Omk/X+LDt1vOMt0csFc5BDbnYmVK4zBgCzOvmijHMtLPkPAKWaLyKmcJBzGRaSU2Hw==
+"@burner-wallet/assets@^1.0.0", "@burner-wallet/assets@^1.1.0":
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/@burner-wallet/assets/-/assets-1.1.5.tgz#e3654303555671c2850723d1c6dc2bc4803741e1"
+  integrity sha512-6VIGHHuJ6fdL48B3MxaJ2fxNhzBlgzUveuQ5QuVmztz20iRQyf78MYtppeEpfwsRjuqSRL56a42QMNn7RR/j6w==
   dependencies:
     isomorphic-fetch "^2.2.1"
     web3-utils "^1.2.2"
 
-"@burner-wallet/core@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@burner-wallet/core/-/core-1.0.0.tgz#caa15c34e9560e270ed5cffebd8c377789245e32"
-  integrity sha512-fQWQPbBrkhdtbCT3eEMrCVW5X31RTLt4JEUdLDgqJwYuAUDW8fQiqVNzU6e3o8jvDXTXRGlqucEjyGQ8+T1hZQ==
+"@burner-wallet/core@^1.0.0", "@burner-wallet/core@^1.1.7":
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/@burner-wallet/core/-/core-1.1.7.tgz#e8189f544df00344ed0de18c5b399a20d89194c4"
+  integrity sha512-Dk6IRmipzZvEyObT1UaO1tXwrMNQrTt6n+uQLGXSqg8KSg5XTreYqtGLbBp/7nAPgbJXYcyFkEHgvuY7rbREzA==
   dependencies:
-    "@burner-wallet/assets" "^1.0.0"
+    "@burner-wallet/assets" "^1.1.0"
     "@dmihal/tabookey-gasless" "^0.4.1"
     web3 "^1.2.2"
     web3-provider-engine "15.0.3"
@@ -1096,12 +1096,12 @@
     "@types/react" "*"
 
 "@burner-wallet/modern-ui@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@burner-wallet/modern-ui/-/modern-ui-1.0.0.tgz#b348a702c69b54a9887d80872feea163bd6d3d00"
-  integrity sha512-NEratdWp/B2bSxu61ffuHK69tFtL4WhC/7GLiRpzjQBmPs8bZfFDCbYgGSAmOKV6rfuD/XQfYNXzWOip14tTyg==
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@burner-wallet/modern-ui/-/modern-ui-1.0.5.tgz#9c19f2f313754cce94c66e9107e9b546a7a67f39"
+  integrity sha512-CefyGu3IQFebwGrf3epE5k7yjPtrdW+2EbCtYVZkc5nyKMrbAhshcqQW+FDdN80i13ton8q7YE9/3zQKICbvcw==
   dependencies:
-    "@burner-wallet/types" "^1.0.0"
-    "@burner-wallet/ui-core" "^1.0.0"
+    "@burner-wallet/types" "^1.0.2"
+    "@burner-wallet/ui-core" "^1.0.2"
     "@types/clipboard" "^2.0.1"
     "@types/color" "^3.0.0"
     "@types/ethereumjs-util" "^5.2.0"
@@ -1116,26 +1116,30 @@
     react-qr-reader "^2.2.1"
     styled-components "^4.4.0"
 
-"@burner-wallet/types@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@burner-wallet/types/-/types-1.0.0.tgz#f7a0d66ed5ed6796ba05fd49406f46763036d417"
-  integrity sha512-cgbsFXryN/5SyyBMFZ3qui/zNqloifnfTg/BMpYFA/vcWNtVZrIJ6V+Rg5iA6Q0Aef/X/QuEAdkfUEKIiqm+OA==
+"@burner-wallet/types@^1.0.0", "@burner-wallet/types@^1.0.2":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@burner-wallet/types/-/types-1.0.6.tgz#44d24bd54ac3e172d61e01725b0ed012878ae0fb"
+  integrity sha512-6g86fQdOVwB1anFrToSocxZqMyaROysTxeivvtPZW3lgShnvBcwfEjqlm9DdIlrCxPBmcQv3gUCCOumaudM8nA==
   dependencies:
     "@burner-wallet/assets" "^1.0.0"
     "@burner-wallet/core" "^1.0.0"
     "@types/react" "*"
     "@types/react-router-dom" "*"
+    i18next "^19.0.2"
     web3 "^1.2.2"
 
-"@burner-wallet/ui-core@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@burner-wallet/ui-core/-/ui-core-1.0.0.tgz#9f95f3396e4bb02016a26c862c05279c9a665cec"
-  integrity sha512-LmiESDGAPsQ+NZlDqNR4ogGwKfc4dadO88ZLz+bNfmgeZrG3yRKYjLFMI8gJNTFxzc9nrac/iEXnKPFE3GNNIQ==
+"@burner-wallet/ui-core@^1.0.2":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@burner-wallet/ui-core/-/ui-core-1.0.5.tgz#445696e9b3df260b59807de3045bc3a390293779"
+  integrity sha512-yZCfdwbXYJuKPG/24SngYkhFs2qL3M0TlPVxqJ7uIEJWoCOn1j049eyjW4KSd5pL5Wtsh82+mPKOUGveGS2Q5A==
   dependencies:
-    "@burner-wallet/core" "^1.0.0"
-    "@burner-wallet/types" "^1.0.0"
+    "@burner-wallet/core" "^1.1.7"
+    "@burner-wallet/types" "^1.0.2"
     "@types/react" "*"
     "@types/react-router-dom" "^4.3.4"
+    i18next "^19.0.2"
+    i18next-browser-languagedetector "^4.0.1"
+    react-i18next "^11.2.7"
     react-router-dom "^5.0.1"
 
 "@cnakazawa/watch@^1.0.3":
@@ -7430,6 +7434,13 @@ html-minifier@^3.5.20:
     relateurl "0.2.x"
     uglify-js "3.4.x"
 
+html-parse-stringify2@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/html-parse-stringify2/-/html-parse-stringify2-2.0.1.tgz#dc5670b7292ca158b7bc916c9a6735ac8872834a"
+  integrity sha1-3FZwtyksoVi3vJFsmmc1rIhyg0o=
+  dependencies:
+    void-elements "^2.0.1"
+
 html-webpack-plugin@4.0.0-beta.5:
   version "4.0.0-beta.5"
   resolved "https://registry.yarnpkg.com/html-webpack-plugin/-/html-webpack-plugin-4.0.0-beta.5.tgz#2c53083c1151bfec20479b1f8aaf0039e77b5513"
@@ -7566,6 +7577,20 @@ humanize-ms@^1.2.1:
   integrity sha1-xG4xWaKT9riW2ikxbYtv6Lt5u+0=
   dependencies:
     ms "^2.0.0"
+
+i18next-browser-languagedetector@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/i18next-browser-languagedetector/-/i18next-browser-languagedetector-4.0.1.tgz#6a0b44a93835146287130da36ce3d04a1836879f"
+  integrity sha512-RxSoX6mB8cab0CTIQ+klCS764vYRj+Jk621cnFVsINvcdlb/cdi3vQFyrPwmnowB7ReUadjHovgZX+RPIzHVQQ==
+  dependencies:
+    "@babel/runtime" "^7.5.5"
+
+i18next@^19.0.2:
+  version "19.1.0"
+  resolved "https://registry.yarnpkg.com/i18next/-/i18next-19.1.0.tgz#fe1a1da3d208872946307c7d2d115da45d46159f"
+  integrity sha512-ISbmukX4L6Dz0QoH9+EW1AnBw7j+NRLoMu9uLPMaNSSTP9Eie9/oUL0dOyWX15baB3gYOpkHJpGZRHOqcnl0ew==
+  dependencies:
+    "@babel/runtime" "^7.3.1"
 
 iconv-lite@0.4.24, iconv-lite@^0.4.24, iconv-lite@^0.4.4, iconv-lite@~0.4.13:
   version "0.4.24"
@@ -11909,6 +11934,14 @@ react-error-overlay@^6.0.3:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.3.tgz#c378c4b0a21e88b2e159a3e62b2f531fd63bf60d"
   integrity sha512-bOUvMWFQVk5oz8Ded9Xb7WVdEi3QGLC8tH7HmYP0Fdp4Bn3qw0tRFmr5TW6mvahzvmrK4a6bqWGfCevBflP+Xw==
 
+react-i18next@^11.2.7:
+  version "11.3.1"
+  resolved "https://registry.yarnpkg.com/react-i18next/-/react-i18next-11.3.1.tgz#9269282c3f566015f0bdf8fdbf46782bbe50f5a7"
+  integrity sha512-S/CWHcnew1lXo8HeniGhBU5kTmPhZ4w4rtA4m/gDN07soCtKKYSAcLNm7zhwjI2OSR4Skd0vOtzNp/FzEEjxIw==
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    html-parse-stringify2 "2.0.1"
+
 react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.4:
   version "16.11.0"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.11.0.tgz#b85dfecd48ad1ce469ff558a882ca8e8313928fa"
@@ -14313,6 +14346,11 @@ vm-browserify@^1.0.1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.0.tgz#bd76d6a23323e2ca8ffa12028dc04559c75f9019"
   integrity sha512-iq+S7vZJE60yejDYM0ek6zg308+UZsdtPExWP9VZoCFCz1zkJoXFnAX7aZfd/ZwrkidzdUZL0C/ryW+JwAiIGw==
+
+void-elements@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/void-elements/-/void-elements-2.0.1.tgz#c066afb582bb1cb4128d60ea92392e94d5e9dbec"
+  integrity sha1-wGavtYK7HLQSjWDqkjkulNXp2+w=
 
 w3c-hr-time@^1.0.1:
   version "1.0.1"
