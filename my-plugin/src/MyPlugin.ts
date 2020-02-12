@@ -18,8 +18,8 @@ export default class MyPlugin implements Plugin {
     });
     pluginContext.addElement('home-middle', MyElement);
 
-    onQRScanned: ((scan: string, ctx: PluginActionContext) => {
-      if (scan === 'My Plugin') {
+    pluginContext.onQRScanned((scannedQR: string, ctx: PluginActionContext) => {
+      if (scannedQR === 'My Plugin') {
         ctx.actions.navigateTo('/my-page');
         return true;
       }
