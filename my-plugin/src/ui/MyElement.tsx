@@ -3,11 +3,11 @@ import { PluginElementContext } from '@burner-wallet/types';
 import MyPlugin from '../MyPlugin';
 
 const MyElement: React.FC<PluginElementContext> = ({ plugin }) => {
-  const [block, setBlock] = useState<string | null>(null);
+  const [block, setBlock] = useState<number | null>(null);
   const _plugin = plugin as MyPlugin;
 
   useEffect(() => {
-    _plugin.getBlockNum().then((num: string) => setBlock(num))
+    _plugin.getBlockNum().then((num: number) => setBlock(num))
   }, []);
 
   return (
