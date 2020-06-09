@@ -18,9 +18,7 @@ const core = new BurnerCore({
   assets: [xdai, dai, eth],
 });
 
-const exchange = new Exchange({
-  pairs: [new XDaiBridge(), new Uniswap('dai')],
-});
+const exchange = new Exchange([new XDaiBridge(), new Uniswap('dai')]);
 
 const BurnerWallet = () =>
   <ModernUI
