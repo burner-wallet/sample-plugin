@@ -13,8 +13,5 @@
     "@burner-wallet/assets": "^1.0.0",
     "@burner-wallet/types": "^1.0.0",
     "@types/react": "*"
-  },
-  "devDependencies": {
-    "typescript": "^3.5.2"
   }
 }
